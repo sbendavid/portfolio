@@ -12,11 +12,15 @@ This repository contains the code for my personal portfolio website built using 
 ## Setup Instructions
 
 1. **Clone the Repository**:
-```git clone <repository-url>```
+```
+git clone <repository-url>
+```
 
 
 2. **Create a Virtual Environment** (Optional but recommended):
-```python3 -m venv env```
+```
+python3 -m venv env
+```
 
 
 3. **Activate the Virtual Environment**:
@@ -30,22 +34,28 @@ This repository contains the code for my personal portfolio website built using 
   ```
 
 4. **Install Dependencies**:
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 
 5. **Database Setup**:
-- By default, this project uses SQLite for development. You can change the database settings in `portfolio/settings.py` if needed.
+- By default, this project uses SQLite for development. You can change the database settings in `backend/settings.py` if needed.
 - Run migrations to create database tables:
   ```
   python manage.py migrate
   ```
 
 6. **Create a Superuser** (Admin):
-```python manage.py createsuperuser```
+```
+python manage.py createsuperuser
+```
 
 
 7. **Run the Development Server**:
-```python manage.py runserver```
+```
+python manage.py runserver
+```
 
 
 8. **Access the Website**:
