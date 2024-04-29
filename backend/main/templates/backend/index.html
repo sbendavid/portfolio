@@ -289,7 +289,8 @@
               possible.
             </p>
           </div>
-          <form action="" class="contact__form">
+          <form method="post" action="" class="contact__form">
+            {% csrf_token %}
             <div class="contact__control">
               <label for="name" class="visually-hidden">Name</label>
               <input
