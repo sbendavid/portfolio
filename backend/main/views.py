@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
+from django.conf import settings
 
 from .forms import ContactForm
 from .models import Project, Skill
@@ -20,7 +21,7 @@ def index(request):
             subject = 'New Contact Message'
             message = f'Name: {form.cleaned_data["name"]}\nEmail: {form.cleaned_data["email"]}\nMessage: {form.cleaned_data["message"]}'
             sender = form.cleaned_data['email']
-            recipient = ['samuelbendavid01@gmail.com']
+            recipient = [settings.EMAIL_HOST_USER]
 
             send_mail(subject, message, sender, recipient, fail_silently=False)
             return redirect('index')
