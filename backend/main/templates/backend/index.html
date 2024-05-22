@@ -8,15 +8,15 @@
         <picture>
           <source
             media="(min-width: 62.5em)"
-            srcset="{% static '/backend/images/image-profile-desktop.webp' %}"
+            srcset="{% static '/backend/images/ABC_0925eer_desktop.png' %}"
           />
           <source
             media="(min-width: 37.5em)"
-            srcset="{% static '/backend/images/image-profile-tablet.webp' %}"
+            srcset="{% static '/backend/images/ABC_0925eer_tablet.png' %}"
           />
           <img
             class="hero__image"
-            src="{% static '/backend/images/image-profile-mobile.webp' %}"
+            src="{% static '/backend/images/ABC_0925eer_mobile.png' %}"
             alt="picture of Adam Keyes"
             width-="174"
             height="383"
@@ -42,8 +42,8 @@
             meet you! I'm <span>Ben-David Samuel</span>.
           </h1>
           <p class="hero__description">
-            Based in the UK, I'm a full-stack developer passionate about
-            building accessible software that users love.
+            As a full-stack developer, I am dedicated to creating accessible and
+            user-friendly software that you'll love.
           </p>
           <a href="#contact" class="hero__contact underline">Contact me</a>
         </div>
@@ -57,7 +57,9 @@
       {% for skill in skills %}
       <div class="skills__item">
         <h3 class="skills__title">{{skill.name}}</h3>
-        <p class="skills__description">{{skill.years_of_experience}} Years Experience</p>
+        <p class="skills__description">
+          {{skill.years_of_experience}} Years Experience
+        </p>
       </div>
       {% endfor %}
     </div>
